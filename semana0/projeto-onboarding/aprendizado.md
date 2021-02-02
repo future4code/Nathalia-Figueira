@@ -1,0 +1,2 @@
+# Aprendizados da Semana
+Nesta semana eu aprendi muita coisa legal. Nesta primeira semana de aula aqui na **Labenu** eu aprendi um pouco sobre mexer na plataforma **Slack**, na plataforma do **Git Hub**, aprendi sobre terminais- utilizando o **Git Bash**, Ides - usando o **Vs Code**. 

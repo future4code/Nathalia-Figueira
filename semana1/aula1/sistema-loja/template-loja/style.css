@@ -63,13 +63,13 @@ nav.menu li:hover {
 
 main {
     background-color: green;
-    position: relative;
+    position:relative;
     height: 50vh;
-    width: ;: 100vw;
-    text-align: :left;
-    font-size: 25px;
-    padding-left: 250px;
-    padding-right: 250px;
+    width: 100vw;
+    text-align:left;
+    font-size:25px;
+    padding-left:250px;
+    padding-right:250px;
 }
 
 
@@ -83,7 +83,6 @@ main {
 #venda label{
     font-size: 20px;
     width: 15vw;
-    
 
 }
 

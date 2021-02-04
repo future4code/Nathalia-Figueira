@@ -33,9 +33,6 @@ div>p:first-child {
     display: inline;
 }
 
-div img {
-    background: black;
-}
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -55,9 +52,6 @@ div img {
     text-align: center;
 }
 
-.icone {
-    height: 15px;
-}
 
 
 /** 
@@ -99,6 +93,23 @@ div{
     justify-content: center;
     text-align: center;
     display: flex;
+}
+#pesquisar{
+    margin-left: 10px;
+    height: 4vh;
+    width: 4vh;
+    border: white;
+}
+
+#pesquisar hover{
+    border: white;
+}
+
+.icone {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    
 }
 
 table {

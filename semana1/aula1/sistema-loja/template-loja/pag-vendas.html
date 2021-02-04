@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+   <header>
+          <img src="img\fofuchos.png" width="30%">
+
+    </header>
+
+    <aside> 
+        <nav class= "menu">
+            <ul type="disc">
+                 <li>
+                     <a href="index.html">Página Inicial</a>
+                 </li>
+                 <li>
+                     <a href="ctrl-estoque.html">Controle de Estoque</a>
+                 </li>
+                 <li>
+                     <a href="add-produto.html">Adicionar Produto</a>
+                 </li>
+                 <li>    
+                     <a href="funcionarios.html">Funcionários</a>
+                 </li>
+                  <li>
+                     <a href="pag-vendas.html">Vendas</a>
+                 </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+         <table id="venda">
+            <tr>
+                <td> <label for="cod-produto">Código do Produto:</label></td>
+                <td> <input id="cod-produto" type="number"> </td>
+            </tr>
+            <tr>
+                <td><label for="quantidade">Quantidade:</label></td>
+                <td><input id="quantidade" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="cod-vendedor">Código do Vendedor:</label></td>
+                <td><input id="cod-vendedor" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="tipo-de-acao:">Tipo de Ação</label></td>
+                <td><select name= "tipo de ação">
+                <option>
+                <option> Venda
+                <option> Troca
+                <option>consulta
+                </select>
+                </td>
+            </tr>
+            </table>
+                  <button id="Confirmar">Confirmar</button>
+            </table>
+             <label for="cod-vendedor">Histórico</label>
+             <button id="historico">Ir</button>
+
+     </main>
+
+
+
+
+</body>

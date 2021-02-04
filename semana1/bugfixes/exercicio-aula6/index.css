@@ -95,13 +95,15 @@ div img {
   *
   **/
 
-div:nth-child(2),
-div:last-child {
+div{
+    justify-content: center;
     text-align: center;
+    display: flex;
 }
 
 table {
     width: 60%;
+   
 }
 
 td button {

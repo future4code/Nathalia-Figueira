@@ -35,15 +35,38 @@
         </nav>
     </aside>
     <main>
-         <form id="venda">
-         <label for="cod-produto">Código do Produto:</label>
-         <input id="cod-produto" type="number">
-         <label for="quantidade">Quantidade:</label>
-         <input id="quantidade" type="number">
-         <label for="cod-vendedor">Código do Vendedor:</label>
-         <input id="cod-vendedor" type="number">
-         <button id="Confirmar">Confirmar</button>
-     </form>
+         <table id="venda">
+            <tr>
+                <td> <label for="cod-produto">Código do Produto:</label></td>
+                <td> <input id="cod-produto" type="number"> </td>
+            </tr>
+            <tr>
+                <td><label for="quantidade">Quantidade:</label></td>
+                <td><input id="quantidade" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="cod-vendedor">Código do Vendedor:</label></td>
+                <td><input id="cod-vendedor" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="tipo-de-acao:">Tipo de Ação</label></td>
+                <td><select name= "tipo de ação">
+                <option>
+                <option> Venda
+                <option> Troca
+                <option>consulta
+                </select>
+                </td>
+            </tr>
+            </table>
+                  <button id="Confirmar">Confirmar</button>
+            </table>
+             <label for="cod-vendedor">Histórico</label>
+             <button id="historico">Ir</button>
+
      </main>
+
+
+
 
 </body>

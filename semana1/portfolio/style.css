@@ -131,28 +131,82 @@ Footer {
 .perfil {
     height: 100%;
     text-align: center;
-    background-color: #cccccc;
            
 }
 .foto-perfil {
     margin-top:10% ;
     height: 300px;
-
-}
-
-.sobre-min {
-
-    
-    
-    
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 10px 10px  5px black;
 }
 
 .quem-sou-eu{
-
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px  4px white;
+    text-align: justify;
+    
    
 }
     
 
 .minha-bio {
-  
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
  }
+/**Fim da estilização da Minha Bio**/
+
+/** Inicio da estilização EXPERIÊNCIAS**/
+#experiencias {
+    margin: 0;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    background-color:#541616;
+
+}
+
+#estudos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:#541616;   
+}
+.educacao {
+    margin-left: 250px;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+
+    
+
+}
+.certificados{
+    margin-right: 150px;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+
+.ensino li{
+  color: White;
+  background-color: black;
+  border-radius: 10px;  
+  list-style:none;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
+}
+
+.educ li {
+    color: black;
+    background-color:#541616; 
+    width: max-content; 
+    
+}

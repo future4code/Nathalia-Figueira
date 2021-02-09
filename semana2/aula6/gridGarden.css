@@ -1,0 +1,58 @@
+Nivel-01
+    grid-column-start: 3;
+Nivel-02
+    grid-column-start: -5;
+Nivel-03
+    grid-column-end: 4;
+Nivel-04
+    grid-column-end: 2
+Nivel-05
+    grid-column-end: 5;
+Nivel-06
+    grid-column-start: 4;
+Nivel-07
+    grid-column-end: 4;
+Nivel-08
+    grid-column-end: 6;
+Nivel-09
+    grid-column-start: 3;
+Nivel-10
+    grid-column: 4 / 6 ;
+Nivel-11
+    grid-column: 2/5 
+Nivel-12
+    grid-row: 3;
+Nivel-13
+    grid-row: 3/6;
+Nivel-14
+    grid-column: 2;
+    grid-row: 5;
+Nivel-15
+    grid-column: 2 / 6;
+    grid-row: 1 / 7;
+Nivel-16
+    grid-area: 1/2/ 4/6;
+Nivel-17
+    grid-area: 2/3/5/6;
+Nivel-18
+    order: 5;
+Nivel-19
+    order: -1;
+Nivel-20
+    grid-template-columns: 50% 25% 25%;
+Nivel-21
+    grid-template-columns: repeat(8, 12.5%);
+Nivel-22
+    grid-template-columns: 100px 3em 40%;
+Nivel-23
+    grid-template-columns: 1fr 5fr
+Nivel-24
+    grid-template-columns: 50px 1fr 1fr 1fr 50px
+Nivel-25
+    grid-template-columns: 75px 3fr 2fr
+Nivel-26
+    grid-template-rows: 10px 10px 10px 20px  4fr;
+Nivel-27
+    grid-template: 60% 1fr 1fr/ 200px 1fr;
+Nivel-28
+    grid-template: 1fr 50px / 20% 80%

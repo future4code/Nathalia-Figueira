@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#flex-container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    background-color: rgb(70, 64, 64);
+    height: 20vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+h1{
+    
+    margin-left: 5vw;
+    text-shadow: 10px 5px 10px white;
+    font-size: 100px;
+    font-family: 'Jomhuria', cursiva;
+}
+
+#search{
+    margin-right: 5vw;
+    height: 3vh;
+}
+
+main{
+    background-color: black;
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+#menu{
+    display: flex;
+    background-color: rgb(11, 12, 12);
+    width: 15%;
+    height: 100%;
+}
+
+#video-container{
+    height:100%;
+    width: 85%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    align-items: center;
+
+
+}
+.play{
+    display: flex;
+    margin-left: 10px;
+    height: 25%;
+    width: 15%;
+    border: 5px solid rgba(128, 128, 128, 0.137);
+    
+}
+
+.play:hover {
+    box-shadow: 0px 0px 25px white;
+    transform: scale(1.2);
+    
+
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.nome {
+    display: flex;
+    font-style: unset;
+
+}
+
+footer{
+    background-color: rgb(70, 64, 64);
+    display:flex;
+    height: 10vh;
+    width: 100vw;
+    justify-content: center;
+    text-shadow: 2px 5px 10px white;
+    font-size: 20px;
+}
+

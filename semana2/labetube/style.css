@@ -1,3 +1,4 @@
+/*Comentários no final do texto*/
 body {
     margin: 0;
     padding: 0;
@@ -29,10 +30,53 @@ h1{
     font-family: 'Jomhuria', cursiva;
 }
 
-#search{
-    margin-right: 5vw;
-    height: 3vh;
+/*Configuração da barra de pesquisa*/
+#pesquisar{
+    display: inline;
+    background-color:rgb(53, 50, 50);
+    height: 50%;
+    width: 15%;
+    margin-right: 15px;
+    color: white;
+    border-radius: 20px;
+    
 }
+
+#search{
+    position: flex;
+    width: 75%;
+    height: 100%;
+    margin-left: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;   
+    
+    
+}
+
+search::-webkit-input-placeholder {
+    border: none;
+    border-radius: 16px;
+}
+
+search:focus, input:focus {
+    color: white;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.lupa{
+    justify-content: center;
+    text-align:  center;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 4px;
+    
+
+
+}
+/* Fim Configuração da barra de pesquisa*/
+/*Inicio das configurações do main */
 
 main{
     background-color: black;
@@ -94,7 +138,7 @@ video{
     font-size: 16px;
 
 }
-
+/*Fim das configurações do main*/
 footer{
     background-color: rgb(70, 64, 64);
     display:flex;
@@ -105,8 +149,10 @@ footer{
     font-size: 14px;
 }
 
-/*Página de reprodução*/
-
+/*Inicio da COnfiguração das Páginas de reprodução*/
+/*Obs: O vídeo da página 1 já esta dimensionado com uma borda preta, própria
+do seu local de origem, não é possivel remover a borda, por isso o player de execução
+está menor*/
 
 #exibicao{
     display: inline-flex;

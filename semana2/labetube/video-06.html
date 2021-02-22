@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+    </style>
+    <title>LabeTube</title>
+</head>
+
+<body>
+    <header>
+        <h1> LabeTube </h1>
+        <form id="pesquisar">
+            <input id="search" type="text" placeholder="Pesquisar"/>
+            <img class="lupa" type="button" src="lupa.png"/>
+        </form>
+    </header>
+    <main id="exibicao">        
+        <div id="voltar-e-nome"> 
+            <p  onclick="history.go(-1)" class="retornar"> 	&#8630 </p>
+            <p class="id-video">  Vídeo-06</p>  
+        </div>
+        <div id="player">             
+            <embed src="https://storage.googleapis.com/future-apis.appspot.com/6.mp4"/>
+        </div>
+    </main>
+    <footer>
+        <p> Obrigado Pela Visita. </p>
+    </footer>
+</body>

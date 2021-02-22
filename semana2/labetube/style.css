@@ -1,0 +1,215 @@
+/*Comentários no final do texto*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#flex-container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    background-color: rgb(70, 64, 64);
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+h1{
+    
+    margin-left: 5vw;
+    text-shadow: 10px 5px 10px white;
+    font-size: 70px;
+    font-family: 'Jomhuria', cursiva;
+}
+
+/*Configuração da barra de pesquisa*/
+#pesquisar{
+    display: inline;
+    background-color:rgb(53, 50, 50);
+    height: 50%;
+    width: 15%;
+    margin-right: 15px;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+#search{
+    position: flex;
+    width: 75%;
+    height: 100%;
+    margin-left: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;   
+    
+    
+}
+
+search::-webkit-input-placeholder {
+    border: none;
+    border-radius: 16px;
+}
+
+search:focus, input:focus {
+    color: white;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.lupa{
+    justify-content: center;
+    text-align:  center;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 4px;
+    
+
+
+}
+/* Fim Configuração da barra de pesquisa*/
+/*Inicio das configurações do main */
+
+main{
+    background-color: black;
+    display: flex;
+    height: 85vh;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+#menu{
+    display: flex;
+    background-color: rgb(11, 12, 12);
+    width: 15%;
+    height: 100%;
+}
+
+#video-container{
+    height:100%;
+    width: 85%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    align-items: center;
+
+
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    height: 25%;
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid rgba(128, 128, 128, 0.137);
+    
+}
+
+#card:hover{
+    box-shadow: 0px 0px 25px white;
+    transform: scale(1.2);
+    
+
+}
+
+video{
+    margin-top: 8%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nome{
+    color: white;
+    font: bold;
+    font-size: 16px;
+
+}
+/*Fim das configurações do main*/
+footer{
+    background-color: rgb(70, 64, 64);
+    display:flex;
+    height: 5vh;
+    width: 100vw;
+    justify-content: center;
+    text-shadow: 2px 5px 10px white;
+    font-size: 14px;
+}
+
+/*Inicio da COnfiguração das Páginas de reprodução*/
+/*Obs: O vídeo da página 1 já esta dimensionado com uma borda preta, própria
+do seu local de origem, não é possivel remover a borda, por isso o player de execução
+está menor*/
+
+#exibicao{
+    display: inline-flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 100vw;
+}
+
+
+#voltar-e-nome{
+    height: 10%;
+    width: 100vw;
+    display: flex;
+}
+
+.retornar{
+    margin:0;
+    margin-left: 50px;
+    text-align: initial;
+    width: 50%;
+    font-size: 60px;
+    font:bold;
+    color: lightgrey;
+    font-style:italic;
+    text-shadow: 5px 5px 10px gray;
+    ;
+}
+
+
+.id-video{
+    margin:0;
+    margin-top: 5px;
+    margin-right: 100px;
+    text-align: end;
+    width: 50%;
+    font-size: 30px;
+    color: lightgrey;
+    font-style:italic;
+    text-shadow: 5px 5px 10px gray;
+    text-decoration:underline;
+}
+
+#player{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+}
+embed{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:100%;
+    width: 100%;
+    border-width:0;
+    margin:0;
+    
+}

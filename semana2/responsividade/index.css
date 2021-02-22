@@ -1,0 +1,163 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+#main-container{
+    display: flex;
+    margin: 0;
+
+}
+
+#colorido{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+
+div{
+    margin:10px;
+}
+
+#first-block {
+    display: flex;
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+.blue-block {
+    background-color: blue;
+    width: 30vw;
+    height: 20vh;
+    border: 2px solid black;
+}
+
+.yellow-block {
+    background-color: yellow;
+    width: 30vw;
+    height: 20vh;
+    border: 2px solid black;
+}
+
+.green-block {
+    background-color: green;
+    width: 30vw;
+    height: 20vh;
+    border: 2px solid black;
+}
+
+#preto{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    
+}
+
+.black-block{
+    width: 46vw;
+    height: 40vh;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+#branco{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    
+}
+.white-block {
+    background-color: white;
+    width: 30vw;
+    height: 20vh ;
+    border: 2px solid black;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    /* estilo para mobile  */
+    
+    #main-container{
+        display: flexbox;
+    }
+    
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #colorido{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+    }
+    #first-block {
+        display: flex;
+        background-color: red;
+        width: 100vw;
+        height: 10vh;
+        
+    }
+    
+    .blue-block {
+        background-color: blue;
+        width: 45vw;
+        height: 20vh;
+        margin: 10px;
+        border: 2px solid black;
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        width: 45vw;
+        height: 20vh;
+        border: 2px solid black;
+    }
+    
+    .green-block {
+        background-color: green;
+        width: 94vw;
+        height: 20vh;
+        border: 2px solid black;
+    }
+    
+    
+    
+    .black-block{
+        width: 47vw;
+        height: 50vh;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+    }
+    
+        
+    }
+    .white-block {
+        background-color: white;
+        width: 30vw;
+        height: 20vh ;
+        border: 2px solid black;
+    }

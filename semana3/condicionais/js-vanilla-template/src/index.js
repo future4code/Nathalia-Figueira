@@ -167,24 +167,67 @@ imprima "Escolha outro filme :("*/
 
 //_____________________F I M     D O   E X E R C Í C I O 7_________________________________________________
 
-DESAFIOS
+//DESAFIOS
 // Desafio 1
 //Modifique o código do exercício 7 para, antes de imprimir a mensagem "Bom filme!", 
 //pergunte ao usuário, pelo prompt que snack ele vai comprar(pipoca, chocolate, doces, etc) e
 //imprima no console as mensagens "Bom filme!" e "... com [SNACK]", trocando[SNACK] pelo que o usuário
 //colocou no input.
 // R E S P O S T A
+//let tipoFilme = prompt("Qual o tipo de filme?")
+//let valorIngresso = Number(prompt("Qual o valor do ingresso"))
 
-let tipoFilme = prompt("Qual o tipo de filme?")
-let valorIngresso = Number(prompt("Qual o valor do ingresso"))
-let snack= ""
+//if (tipoFilme ==="fantasia" && valorIngresso<=15 ) {
+//    let snack = prompt("Qual snack você quer comprar?")
+//    console.log ("Bom Filme!... com", snack,".")
+//} else {
+//    console.log ("Escolha Outro Filme.")
+//}
 
+//_____________________F I M     D O   D E S A F I O 1_________________________________________________
+// Desafio 2
+// Você foi contratado para criar um sistema de vendas de ingressos de jogos de um estádio de futebol.
+// Para esta compra, o usuário deve fornecer algumas informações:
+// - Nome completo;
+// - Tipo de jogo: IN indica internacional; e DO indica doméstico;
+// - Etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final
+// - Categoria: pode ser as opções 1, 2, 3 ou 4;
+// - Quantidade de ingressos
+// O seu sistema deve solicitar estas informações ao usuário, através do `prompt`.Além disso, ele 
+// deve imprimir tudo isso, junto com o valor de cada ingresso e o valor total que o usuário tem que
+// pagar(ou seja, o valor unitário do ingresso multiplicado pela quantidade).Abaixo, há a tabela com
+// os valores de cada ingresso e exemplos de execução do programa.Lembrando que o valor de jogos
+// internacionais é o mesmo de jogos domésticos, mas seus preços devem ser dados em dólar(considerar 
+// a cotação de U$1,00 = R$4, 10)
 
-if (tipoFilme === "fantasia" && valorIngresso <= 15) {
-    snack = prompt("Qual snack você vai querer comprar?"){
-        if (snack) {
-            console.log("Bom filme! com" + snack)
-        }
-    }else {
-    console.log ("Escolha Outro Filme.")
-} 
+let nome = prompt("Qual o seu Nome Completo?")
+let tipoJogo = prompt("Qual o Tipo de Jogo?\n Digite:\n IN - para internacional\n DO - para doméstico")
+let etapaJogo =("Qual a etapa?\n Digite:\n SF - semi-final\n DT - decisão 3º lugar\n FI - final ")
+let categoria = Number(prompt("Qual a categoria - ala ?\ Digite:\n 1 - azul \n 2 - verde \n 3 - vermelho \n 4 - rosa")) 
+let ingressos = Number(prompt("Qual a Quantidade de Ingressos?")) 
+
+switch (tipoJogo) {
+    case 'in':
+        tipoJogo = "(IN) internacional"
+        let internacional = 4.10
+        break
+    case 'do':
+        tipoJogo = "(DO) Doméstico"
+        break
+    default:
+        tipoJogo = "Insira a sigla Tipo de Jogo Correta"
+}
+
+switch (etapaJogo) {
+    case 'sf':
+        etapaJogo= 1
+        break
+    case 'dt':
+        etapaJogo = 2
+        break
+    case 'fn':
+        etapaJogo = 3
+        break
+    default:
+        tipoJogo = "Insira a sigla Tipo de Jogo Correta"
+}

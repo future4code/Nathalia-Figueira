@@ -65,12 +65,85 @@
 // informacoes()
 //     b.Agora escreva uma função que receba 4 parâmetros que correspondem às informações
 // de uma pessoa: o nome(`string`), a idade(`number`), a cidade(`string`) e um`boolean`
-function informacoes(String, Number, String, Boolean) {
-    console.log("Eu sou",[NOME]," tenho",[IDADE]," anos, moro em",[ENDEREÇO]," e",[SOU / NÃO SOU],"estudante." )
-}
-
-informacoes()
 // que representa se é estudante ou não.Ela deve retornar uma`string` que unifique todas
 // as informações da pessoa em uma só mensagem com o template:
-// Eu sou[NOME], tenho[IDADE] anos, moro em[ENDEREÇO] e[SOU / NÃO SOU]estudante. 
+// Eu sou[NOME], tenho[IDADE] anos, moro em[ENDEREÇO] e[SOU / NÃO SOU], estudante.
+
+// Função para confirmar se é estudante ou não
+function confirmarEstudante(nome, idade, cidade, Estudante) {
+    if (estuda) {
+        respostaEstudante = "sou "
+    } else {
+        respostaEstudante = "não sou";
+    }
+}
+// Variaveis 
+// let estudante = ""
+// let nome = prompt("Qual o seu nome?")
+// let idade = Number(prompt("Qual a sua idade?"))
+// let cidade = prompt("De qual cidade você é?")
+// let estuda = (confirm("Você estuda?"))
+
+// //impressão no console das variaveis
+// console.log(nome)
+// console.log(idade)
+// console.log(cidade)
+// console.log(estuda)
+
+// //impressão das informações
+
+// confirmarEstudante(nome, idade, cidade, estudante)
+// console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e eu ${respostaEstudante} estudante.`)
+
+// EXERCÍCIO 5
+// Escreva as funções explicadas abaixo:
+// a.Escreva uma função que receba 2 números como parâmetros, e, dentro da
+// função, faça a soma das duas entradas e retorne o resultado.Invoque a função e
+// imprima no console o resultado.
+// b.Faça uma função que recebe 2 números e retorne um booleano que informa
+// se o primeiro número é maior ou igual ao segundo.
+//  c.Faça uma função que recebe uma mensagem(string) como parâmetro e
+// imprima essa mensagem 10 vezes. (não é permitido escrever 10 console.log
+// dentro da função, use outra estrutura de código para isso)
+
+let operacao = alert("Os número inseridos a seguir realizarão a operação de soma")
+
+let somar = Number
+let numero1Maior = Boolean
+let resultadoComparador = ""
+let numero1 = Number
+let numero2 = Number
+let mensagem = String
+let inicioRepeticao = Number
+const repetir = 10
+
+function operacaoSoma() {
+    numero1 = Number(prompt("Digite um número:"))
+    console.log("Primeira Parcela: ",numero1)
+    numero2 = Number(prompt("Digite outro número:"))
+    console.log("Segunda Parcela : +",numero2)
+    somar = (numero1 + numero2)
+    console.log("Resultado/ Soma: ", somar)
+}    
+function comparadorValores() {
+    if (numero1 > numero2) {
+        comparacao1maior = true
+        resultadoComparador = "é"
+    } else {
+        comparacao1maior = false
+        resultadoComparador = "não é"
+    }
+    console.log("O primeiro número informado", resultadoComparador, "maior que o segundo.")
+}
+
+function mensagem10vezes() {
+    mensagem = String(prompt("Insira uma mensagem e ela será repetida 10 vezes"))
+}
+
+operacaoSoma( )
+comparadorValores()
+mensagem10vezes()
+console.log(mensagem.repeat(10))
+
+
 

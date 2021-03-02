@@ -106,44 +106,55 @@ function confirmarEstudante(nome, idade, cidade, Estudante) {
 // imprima essa mensagem 10 vezes. (não é permitido escrever 10 console.log
 // dentro da função, use outra estrutura de código para isso)
 
-let operacao = alert("Os número inseridos a seguir realizarão a operação de soma")
+// let operacao = alert("Os número inseridos a seguir realizarão a operação de soma")
 
-let somar = Number
-let numero1Maior = Boolean
-let resultadoComparador = ""
-let numero1 = Number
-let numero2 = Number
-let mensagem = String
-let inicioRepeticao = Number
-const repetir = 10
+// let somar = Number
+// let numero1Maior = Boolean
+// let resultadoComparador = ""
+// let numero1 = Number
+// let numero2 = Number
+// let mensagem = String
+// let inicioRepeticao = Number
+// const repetir = 10
 
-function operacaoSoma() {
-    numero1 = Number(prompt("Digite um número:"))
-    console.log("Primeira Parcela: ",numero1)
-    numero2 = Number(prompt("Digite outro número:"))
-    console.log("Segunda Parcela : +",numero2)
-    somar = (numero1 + numero2)
-    console.log("Resultado/ Soma: ", somar)
-}    
-function comparadorValores() {
-    if (numero1 > numero2) {
-        comparacao1maior = true
-        resultadoComparador = "é"
-    } else {
-        comparacao1maior = false
-        resultadoComparador = "não é"
-    }
-    console.log("O primeiro número informado", resultadoComparador, "maior que o segundo.")
-}
+// function operacaoSoma() {
+//     numero1 = Number(prompt("Digite um número:"))
+//     console.log("Primeira Parcela: ",numero1)
+//     numero2 = Number(prompt("Digite outro número:"))
+//     console.log("Segunda Parcela : +",numero2)
+//     somar = (numero1 + numero2)
+//     console.log("Resultado/ Soma: ", somar)
+// }    
+// function comparadorValores() {
+//     if (numero1 > numero2) {
+//         comparacao1maior = true
+//         resultadoComparador = "é"
+//     } else {
+//         comparacao1maior = false
+//         resultadoComparador = "não é"
+//     }
+//     console.log("O primeiro número informado", resultadoComparador, "maior que o segundo.")
+// }
 
-function mensagem10vezes() {
-    mensagem = String(prompt("Insira uma mensagem e ela será repetida 10 vezes"))
-}
+// function mensagem10vezes() {
+//     mensagem = String(prompt("Insira uma mensagem e ela será repetida 10 vezes"))
+// }
 
-operacaoSoma( )
-comparadorValores()
-mensagem10vezes()
-console.log(mensagem.repeat(10))
+// operacaoSoma( )
+// comparadorValores()
+// mensagem10vezes()
+// console.log(mensagem.repeat(10))
 
 
+// EXERCÍCIO 6
+// Para os itens a seguir, considere o seguinte array para os seus testes:
+// const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// a.Escreva uma função que receba um array de números e devolva a quantidade
+// de elementos nele
+// b.Escreva uma função que receba um número e devolva um booleano
+// indicando se ele é par ou não
+// c.Escreva uma função que receba um array de números e devolva a quantidade
+// de números pares dentro dele
+// d.Reescreva seu código anterior(do item c) de tal forma que ele utilize a função
+// do item b para verificar se o número é par
 

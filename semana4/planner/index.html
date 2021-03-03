@@ -4,7 +4,7 @@
         <meta charset="UTF-8M" />
         <meta name="viewport" content="width=device-width, initial-scale=0.5" />
         <link rel="stylesheet" type="text/css" href="./index.css" />
-        <script src="index.js" defer> </script>
+        <script src="index.js" defer > </script>
         <title>Planner Semanal</title>
     </head>
     <body>
@@ -14,8 +14,8 @@
             </header>
             <main>
                 <div id="form1semana">
-                    <form id="formsemana" action="index.js" method="post">
-                        <select name="diasemana" id="diasemana">
+                    <form id="formsemana" action="">
+                        <select name="diasemana" id="dia-semana">
                             <option value= "2"> Segunda-Feira </option>
                             <option value= "3"> Terça-Feira </option>
                             <option value= "4"> Quarta-Feira </option>
@@ -24,7 +24,7 @@
                             <option value= "7"> Sábado </option>
                             <option value= "1"> Domingo </option>
                         </select> 
-                        <select name="horadia" id="horadia">
+                        <select name="horadia" id="hora-dia">
                             <option value= "06"> 06:00 h </option>
                             <option value= "07"> 07:00 h </option>
                             <option value= "08"> 08:00 h </option>
@@ -44,23 +44,23 @@
                             <option value= "22"> 22:00 h </option>
                             <button type="button">Adiconar!</button>
                         </select> 
-                        <input type="tarefa" placeholder="Nova tarefa">
-                        <button id="addtarefa" type="button">Adicionar</button>
+                        <input type="text" placeholder="Nova tarefa" id="input-tarefa">
+                        <button id="botao-tarefa" type="button" value="" onclick="addTarefa()" >Adicionar</button>
                     </form>
                 </div>
                 <div id= "form2importante">
                     <form id="formimportante"action="index.js" method="post">
                         <label for="importante">Importante</label>
-                        <input type="text" placeholder="Lembretes Importantes:"/>
+                        <input type="text" placeholder="Lembretes Importantes"/>
                         <button id="addtarefa" type="button">Adicionar</button>
                     </form>
                 </div>
             </main>
-            <section>
+            <aside>
                 <div id="quadrosemanal"> 
                     <table>
                         <tr id ="dias">
-                            <th id ="diahora"> DIAS/ HORA</th>
+                            <th id ="diahora"> DIAS<br>HORA</th>
                             <th id="segunda">SEGUNDA</th>
                             <th id="terca">TERÇA</th>
                             <th id="quarta">QUARTA</th>
@@ -77,7 +77,7 @@
                             <td class="506"><td>
                             <td class="606"><td>
                             <td class="706"><td>
-                            <td class="106"><td>
+                            <td class="hora" value="106">bdfbdtndtn<td>
                         </tr>
                         <tr id="setehoras">
                             <td>07:00</td>
@@ -120,6 +120,7 @@
                             <td class="110"><td>
                         </tr>
                         <tr id="onzehoras">
+                            <td> 11:00</td>
                             <td class="211"><td>
                             <td class="311"><td>
                             <td class="411"><td>
@@ -241,29 +242,21 @@
                     </table>
                 </div>
                 <div id="quadroimportantes">
-                    <table id="avisosimportantes"> 
-                        <tr id ="importante">
-                            <th id ="aviso"> QUADRO DE AVISOS </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul id="listaaviso">
-                                    <li class="0001"></li>
-                                    <li class="0002"></li>
-                                    <li class="0003"></li>
-                                    <li class="0004"></li>
-                                    <li class="0005"></li>
-                                    <li class="0006"></li>
-                                    <li class="0007"></li>
-                                    <li class="0008"></li>
-                                    <li class="0009"></li>
-                                    <li class="0010"></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                    <h3 id ="aviso"> QUADRO DE AVISOS </h3>
+                    <ul id="listaaviso">
+                        <li class="0001"></li>
+                        <li class="0002"></li>
+                        <li class="0003"></li>
+                        <li class="0004"></li>
+                        <li class="0005"></li>
+                        <li class="0006"></li>
+                        <li class="0007"></li>
+                        <li class="0008"></li>
+                        <li class="0009"></li>
+                        <li class="0010"></li>
+                    </ul>
                 </div>
-            </section>
+            </aside>
         </div>
     </body>
 </html>

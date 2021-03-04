@@ -13,25 +13,43 @@
 // os posts. Pode ser uma div ou uma section, por exemplo.
 // 5 - Crie uma função responsável por inserir os posts no HTML. Não se preocupe
 // com a aparência, garanta que os dados estão sendo exibidos
+const titulo = document.getElementById ("titulo-post")
+const autor = document.getElementById ("autor-post")
+const conteudo = document.getElementById ("conteudo-post")
+const div = document.getElementById("container-de-posts")
+
+const postagem = {
+        titulo: Text,
+        autor: Text,
+        conteudo: Text,
+    }
+
     
 
-function postagem () {
-    let titulo = String (document.getElementById('titulo-post'))
-    let autor = String (document.getElementById('autor-post'))
-    let conteudo = String (document.getElementById('conteudo-post'))
-    if ( titulo.value !=="" && autor.value!=="" && conteudo.value !== ""){
-        let publicacao = document.getElementById('container-de-posts')
-        publicacao.innerHTML += <h1> $(titulo.valor)</h1>; 
-        <h3>$(autor.valor)</h3>;
-        <p>$(conteudo.valor)</p>
-        div;
-        titulo.value =""
+    function adicionar(evento){
+        console.log(evento)
+        adicionarPost ()
+    }
+    
+
+function adicionarPost() {
+        const tituloDoPost = postagem.titulo
+        const nomeAutor = postagem.autor
+        const textoConteudo = postagem.conteudo
+
+        div.innerHTML += `<h1>${titulo.value}</h1>`
+        div.innerHTML += `<h3>${autor.value}</h3>`
+        div.innerHTML += `<p>${conteudo.value}</p>`
+        
+        console.log(postagem.value)
+        console.log(tituloDoPost.value)
+        console.log(nomeAutor.value)
+        console.log(textoConteudo.value)
+
+        titulo.value = ""
         autor.value=""
-        conteudo.value =""        console.log (postagem)
+        conteudo.value =""
+    }
 
-    } else (titulo.value==="" || autor.value==="" || conteudo.value ==="")
-        alert ("Preencha todos os campos corretamente.")
-}
-postagem()
 
-posted.innerHTML += `
+

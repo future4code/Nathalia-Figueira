@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
 <body>
     <section id="formulario">
         <label for="titulo-post">Título:</label>
-        <input type="text" id="titulo-post" >
+        <input type="text" id="titulo-post">
 
         <label for="autor-post">Autor:</label>
-        <input type="text" id="autor-post"  >
+        <input type="text" id="autor-post">
 
         <label for="conteudo-post">Conteúdo:</label>
-        <textarea id="conteudo-post" cols="30" rows="10"></textarea>
+        <textarea type ="text" id="conteudo-post" cols="30" rows="10"></textarea>
         
-        <button onclick="postagem()">Criar Post</button>
+        <button type="button" onclick="adicionar(event)" >Criar Post</button>
     </section>
 
     <section id="container-de-posts">

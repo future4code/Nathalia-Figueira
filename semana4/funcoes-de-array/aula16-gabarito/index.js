@@ -4,18 +4,19 @@ imprimirExtrato()
 
 
 // PRIMEIRO
-function imprimirDespesas(despesas){
+function imprimirDespesas(despesas) {
     let divDespesas = document.getElementById('despesas')
     divDespesas.innerHTML = '<p><u>Despesas Detalhadas</u></p>'
     arrDespesas
-    
-    despesas.forEach ((item) => {
-        "<h3> divDespesas.innerHTML = 'Despesas Detalhadas</h3>"
-        
-    })
-    console.log(despesas)
-    
+
     // AQUI VEM A IMPLEMENTAÇÃO
+    despesas.forEach ((item) => {
+        divDespesas.innerHTML += 
+                            `<p> <u> Valor:</u> <b> R$ ${item.valor}</b> 
+                            <u>Tipo:</u> <b>${item.tipo} </b>
+                            <u>Descrição:</u> <b>${item.descricao}</b> </p>`;
+    }) 
+    console.log(despesas)
 }
 
 
@@ -29,6 +30,12 @@ function imprimirExtrato(){
 
 
     // AQUI VEM A IMPLEMENTAÇÃO
+    
+    gastoAlimentacao = arrDespesas.filter((item) => {
+    return item.value === "Alimentação" 
+    })
+
+
 
     divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
                                         Utilidades: R$${gastoUtilidades} | Viagem: R$${gastoViagem}</p>`

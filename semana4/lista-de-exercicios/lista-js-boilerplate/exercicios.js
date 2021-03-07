@@ -24,9 +24,20 @@ function inverteArray(array) {
 }
 //Exercício 2
 
-function retornaNumerosParesElevadosADois (array) {
+function retornaNumerosParesElevadosADois(array) {
    // implemente sua lógica aqui
+   numeroPares = [];
+   array.forEach(number => {
+      if (number % 2 === 0) {
+         numeroPares.push(number ** 2);
+      }
+      
+   })
+   return numeroPares;
+   console.log(numPares)
+
 }
+
 
 //Exercício 3
 

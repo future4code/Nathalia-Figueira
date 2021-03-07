@@ -18,7 +18,6 @@ function inverteArray(array) {
    // implemente sua lógica aqui
    let arrayReverso = [0, 8, 23, 16, 10, 15, 41, 12, 13]
    arrayReverso.reverse(arrayReverso.values);
-   console.log (arrayReverso)
    return arrayReverso
 
 }
@@ -30,20 +29,27 @@ function retornaNumerosParesElevadosADois(array) {
    array.forEach(number => {
       if (number % 2 === 0) {
          numeroPares.push(number ** 2);
-      }
-      
+      } 
    })
    return numeroPares;
-   console.log(numPares)
 
 }
 
 
 //Exercício 3
 
-function retornaNumerosPares (array) {
+function retornaNumerosPares(array) {
    // implemente sua lógica aqui
+   numeroPares = [];
+   array.forEach(number => {
+      if (number % 2 === 0) {
+         numeroPares.push(number);
+      }
+   })
+   return numeroPares;
 }
+
+
 
 //Exercício 4
 
@@ -55,6 +61,7 @@ function retornaMaiorNumero(array) {
 
 function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
+   
 }
 
 //Exercício 6

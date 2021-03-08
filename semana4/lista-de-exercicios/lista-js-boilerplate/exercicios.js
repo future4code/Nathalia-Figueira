@@ -106,7 +106,37 @@ function checaTriangulo(a, b, c) {
 
 function comparaDoisNumeros(num1, num2) {
    // implemente sua lógica aqui
-}
+   let maiorDivididoPorMenor = ""
+   let maiorNumero =""
+   let numeroMenor = ""
+   let diferenca = ""
+   let compararNumeros = [Number, Boolean, Number]
+   if (num1 > num2) {
+      maiorNumero = num1
+      numeroMenor = num2
+      diferenca = num1 - num2
+   } else (num1 < num2)
+      maiorNumero = num2
+      numeroMenor = num1
+      diferenca = num2 - num1
+
+   if (maiorNumero % numeroMenor === 0) {
+      maiorDivididoPorMenor = true
+   }
+   if (maiorNumero / numeroMenor >= 0) {
+      diferença = (maiorNumero - numeroMenor)
+   }
+   compararNumeros = "maiorNumero:"+ maiorNumero+ ", \nmaiorDivisivelporMenor:"+ maiorDivididoPorMenor+ ",\ndiferenca:"+ diferenca
+   console.log(maiorNumero, maiorDivididoPorMenor, diferenca)
+   console.log(compararNumeros)
+   return compararNumeros
+} 
+
+
+   
+      
+
+
 
 // Exercício 10
 
@@ -129,7 +159,7 @@ function filmeFavorito() {
 // Exercício 13
 
 function imprimeChamada() {
-   // implemente sua lógica aqui
+   // implemente sua ló2gica aqui
 }
 
 // Exercício 14

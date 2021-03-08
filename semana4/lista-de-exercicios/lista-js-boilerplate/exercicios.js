@@ -78,6 +78,15 @@ function retornaExpressoesBooleanas() {
 
 function retornaNNumerosPares(n) {
    // implemente sua lógica aqui
+   let retornarPares =[]
+   for (let x = 0; retornarPares.length < n; x++){
+      if (x % 2 === 0) {
+         retornarPares.push(x)
+         console.log(retornarPares)
+         
+      }
+   } return retornarPares
+
 }
 
 // Exercício 8

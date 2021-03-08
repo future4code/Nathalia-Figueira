@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8M" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <script src="index.js" defer > </script>
+        <title>Planner Semanal</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Planner Semanal</h1>
+            </header>
+            <main>
+                <div id="form1semana">
+                    <form id="formsemana" action="">
+                        <select name="diasemana" id="dia-semana">
+                            <option value= "2"> Segunda-Feira </option>
+                            <option value= "3"> Terça-Feira </option>
+                            <option value= "4"> Quarta-Feira </option>
+                            <option value= "5"> Quinta-Feira </option>
+                            <option value= "6"> Sexta-Feira </option>
+                            <option value= "7"> Sábado </option>
+                            <option value= "1"> Domingo </option>
+                        </select> 
+                        <select name="horadia" id="hora-dia">
+                            <option value= "06"> 06:00 h </option>
+                            <option value= "07"> 07:00 h </option>
+                            <option value= "08"> 08:00 h </option>
+                            <option value= "09"> 09:00 h </option>
+                            <option value= "10"> 10:00 h </option>
+                            <option value= "11"> 11:00 h </option>
+                            <option value= "12"> 12:00 h</option>
+                            <option value= "13"> 13:00 h </option>
+                            <option value= "14"> 14:00 h </option>
+                            <option value= "15"> 15:00 h </option>
+                            <option value= "16"> 16:00 h </option>
+                            <option value= "17"> 17:00 h </option>
+                            <option value= "18"> 18:00 h </option>
+                            <option value= "19"> 19:00 h </option>
+                            <option value= "20"> 20:00 h </option>
+                            <option value= "21"> 21:00 h </option>
+                            <option value= "22"> 22:00 h </option>
+                            <button type="button">Adiconar!</button>
+                        </select> 
+                        <input type="text" placeholder="Nova tarefa" id="input-tarefa">
+                        <button id="botao-tarefa" type="button" value="" onclick="addTarefa()" >Adicionar</button>
+                    </form>
+                </div>
+                <div id= "form2importante">
+                    <form id="formimportante"action="index.js" method="post">
+                        <label for="importante">Importante</label>
+                        <input type="text" placeholder="Lembretes Importantes"/>
+                        <button id="addtarefa" type="button">Adicionar</button>
+                    </form>
+                </div>
+            </main>
+            <aside>
+                <div id="quadrosemanal"> 
+                    <table>
+                        <tr id ="dias">
+                            <th id ="diahora"> DIAS<br>HORA</th>
+                            <th id="segunda">SEGUNDA</th>
+                            <th id="terca">TERÇA</th>
+                            <th id="quarta">QUARTA</th>
+                            <th id="quinta">QUINTA</th>
+                            <th id="sexta">SEXTA</th>
+                            <th id="sabado">SÁBADO</th>
+                            <th id ="domingo"> DOMINGO</th>
+                        </tr id="horario">
+                        <tr id="seishoras">
+                            <td>06:00</td>
+                            <td class="206"><td>
+                            <td class="306"><td>
+                            <td class="406"><td>
+                            <td class="506"><td>
+                            <td class="606"><td>
+                            <td class="706"><td>
+                            <td class="hora" value="106">bdfbdtndtn<td>
+                        </tr>
+                        <tr id="setehoras">
+                            <td>07:00</td>
+                            <td class="207"><td>
+                            <td class="307"><td>
+                            <td class="407"><td>
+                            <td class="507"><td>
+                            <td class="607"><td>
+                            <td class="707"><td>
+                            <td class="107"><td>
+                        </tr>
+                        <tr id="oitohoras">
+                            <td>08:00</td>
+                            <td class="208"><td>
+                            <td class="308"><td>
+                            <td class="408"><td>
+                            <td class="508"><td>
+                            <td class="608"><td>
+                            <td class="708"><td>
+                            <td class="108"><td>
+                        </tr>
+                        <tr id="novehoras">
+                            <td>09:00</td>
+                            <td class="209"><td>
+                            <td class="309"><td>
+                            <td class="409"><td>
+                            <td class="509"><td>
+                            <td class="609"><td>
+                            <td class="709"><td>
+                            <td class="109"><td>
+                        </tr>
+                        <tr id="dezhoras">
+                            <td>10:00</td>
+                            <td class="210"><td>
+                            <td class="310"><td>
+                            <td class="410"><td>
+                            <td class="510"><td>
+                            <td class="610"><td>
+                            <td class="710"><td>
+                            <td class="110"><td>
+                        </tr>
+                        <tr id="onzehoras">
+                            <td> 11:00</td>
+                            <td class="211"><td>
+                            <td class="311"><td>
+                            <td class="411"><td>
+                            <td class="511"><td>
+                            <td class="611"><td>
+                            <td class="711"><td>
+                            <td class="111"><td>
+                        </tr>
+                        <tr id="dozehoras">
+                            <td>12:00</td>
+                            <td class="212"><td>
+                            <td class="312"><td>
+                            <td class="412"><td>
+                            <td class="512"><td>
+                            <td class="612"><td>
+                            <td class="712"><td>
+                            <td class="112"><td>
+                        </tr>
+                        <tr id="trezehoras">
+                            <td>13:00</td>
+                            <td class="213"><td>
+                            <td class="313"><td>
+                            <td class="413"><td>
+                            <td class="513"><td>
+                            <td class="613"><td>
+                            <td class="713"><td>
+                            <td class="113"><td>
+                        </tr>
+                        <tr id="catorzehoras">
+                            <td>14:00</td>
+                            <td class="214"><td>
+                            <td class="314"><td>
+                            <td class="414"><td>
+                            <td class="514"><td>
+                            <td class="614"><td>
+                            <td class="714"><td>
+                            <td class="114"><td>
+                        </tr>
+                        <tr id="quinzehoras">
+                            <td>15:00</td>
+                            <td class="215"><td>
+                            <td class="315"><td>
+                            <td class="415"><td>
+                            <td class="515"><td>
+                            <td class="615"><td>
+                            <td class="715"><td>
+                            <td class="115"><td>
+                        </tr>
+                        <tr id="deseseishoras">
+                            <td>16:00</td>
+                            <td class="216"><td>
+                            <td class="316"><td>
+                            <td class="416"><td>
+                            <td class="516"><td>
+                            <td class="616"><td>
+                            <td class="716"><td>
+                            <td class="116"><td>
+                        </tr>
+                        <tr id="dezessetehoras">
+                            <td>17:00</td>
+                            <td class="217"><td>
+                            <td class="317"><td>
+                            <td class="417"><td>
+                            <td class="517"><td>
+                            <td class="617"><td>
+                            <td class="717"><td>
+                            <td class="117"><td>
+                        </tr>
+                        <tr id="dezoitohoras">
+                            <td>18:00</td>
+                            <td class="218"><td>
+                            <td class="318"><td>
+                            <td class="418"><td>
+                            <td class="518"><td>
+                            <td class="618"><td>
+                            <td class="718"><td>
+                            <td class="118"><td>
+                        </tr>
+                        <tr id="dezenovehoras">
+                            <td>19:00</td>
+                            <td class="219"><td>
+                            <td class="319"><td>
+                            <td class="419"><td>
+                            <td class="519"><td>
+                            <td class="619"><td>
+                            <td class="719"><td>
+                            <td class="119"><td>
+                        </tr>
+                        <tr id="vintehoras">
+                            <td>20:00</td>
+                            <td class="220"><td>
+                            <td class="320"><td>
+                            <td class="420"><td>
+                            <td class="520"><td>
+                            <td class="620"><td>
+                            <td class="720"><td>
+                            <td class="120"><td>
+                        </tr>
+                        <tr id="vinteumahoras">
+                            <td>21:00</td>
+                            <td class="221"><td>
+                            <td class="321"><td>
+                            <td class="421"><td>
+                            <td class="521"><td>
+                            <td class="621"><td>
+                            <td class="721"><td>
+                            <td class="121"><td>
+                        </tr>
+                        <tr id="vinteduashoras">
+                            <td>22:00</td>
+                            <td class="222"><td>
+                            <td class="322"><td>
+                            <td class="422"><td>
+                            <td class="522"><td>
+                            <td class="622"><td>
+                            <td class="722"><td>
+                            <td class="122"><td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="quadroimportantes">
+                    <h3 id ="aviso"> QUADRO DE AVISOS </h3>
+                    <ul id="listaaviso">
+                        <li class="0001"></li>
+                        <li class="0002"></li>
+                        <li class="0003"></li>
+                        <li class="0004"></li>
+                        <li class="0005"></li>
+                        <li class="0006"></li>
+                        <li class="0007"></li>
+                        <li class="0008"></li>
+                        <li class="0009"></li>
+                        <li class="0010"></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>

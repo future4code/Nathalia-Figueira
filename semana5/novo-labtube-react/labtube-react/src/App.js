@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import labTubeIcon from './images/lab-tube-icon.png';
+import labTubeIcon from './assets/images/lab-tube-icon.png';
+import labenuPropaganda from './assets/images/labenu-propaganda.png';
 
 function App() {
   const titulo = "Título do vídeo"
@@ -9,7 +10,7 @@ function App() {
   }
   return (
     <div >
-      <div className="tela-inteira">
+      <div className="tela-inteira" id="container">
         <header>
           <img className="labtube-icon" src={labTubeIcon} alt="icone-lab Tube" />
           <input type="text" placeholder="Busca" id="campoDeBusca" />
@@ -26,6 +27,10 @@ function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
           </nav>
+
+          <section className="propaganda">
+            <img className="labtube-propaganda" src={labenuPropaganda} alt="Labenu Propaganda" />
+          </section>
 
           <section className="painel-de-videos">
             <div className="box-pagina-principal media1" onClick={reproduzVideo}>

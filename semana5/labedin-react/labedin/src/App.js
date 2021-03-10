@@ -3,16 +3,26 @@ import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import CardPequeno from './components/CardPequeno/CardPequeno';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import FotoNtfigueira from './components/images/foto-ntfigueira.jpg';
+import Irritada from './components/icon/irritada.png';
+import Trabalhadora from './components/icon/trabalhadora.png';
+import EmailImagem from './components/icon/gmail-icon.ico';
 
 function App() {
   return (
     <div className="App">
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
-        <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
+        <CardGrande
+          perfil="Nathália Figueira da Silva"
+          imagem={FotoNtfigueira}
           nome="Nathália Figueira da Silva" 
-          descricao="Olá, meu Nome é Nathália, sou estudante de Programação  Fullstack, no curso Labenu."
+          descricao="Olá, meu Nome é Nathália Figueira da Silva, tenho 31 anos, 
+          sou estudante de Programação  Fullstack, no curso Labenu. Curso Direito na UFF,
+          e apesar de querer seguir na carreira de programação que é o que eu amo fazer
+          , pretendo retomar e  terminar a minha gradução e com isso somar conhecimento.
+          Gosto de pessoas, gosto de resolver conflitos, sou curiosa e determinada.
+          Trabalho bem em grupo e sobre pressão."
         />
         <ImagemButton 
           imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
@@ -23,25 +33,24 @@ function App() {
       <div className="page-section-container">
         <h2>Minhas Experiências</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
+          imagem= {Trabalhadora} 
           nome="Profissional" 
           descricao="Os meus trabalhos anteriores estiveram ligados diretamente a resolução de conflitos, 
           trabalho em equipe, vendas, marketing e gestão de tempo"
         />
         
         <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
+          imagem={Irritada}
           nome="Defeitos" 
           descricao="Apesar de não ser competitiva, não absorvo bem quando perco algo, sinto como
           se fosse um fracasso pessoal e fico irritada e revisitando durante muito tempo"
         />
-        <h2>Email(s) Para Contato</h2>
+        <h2>Email Para Contato</h2>
 
         <CardPequeno
-          imagem=""
-          nome="Emails"
-          endereco="projetolabedin@outlook.com"
-          endereco="projetolabedin@gmail.com.br"
+          imagem={EmailImagem}
+          nome="Email"
+          endereco="projetolabedin@gmail.com"
         />
       </div>
     

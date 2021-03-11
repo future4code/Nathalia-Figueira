@@ -5,7 +5,11 @@ import {IconeComContador} from '../IconeComContador/IconeComContador'
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
-import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
+import iconeMarcadorBranco from '../../img/bookmark_border.svg'
+import iconeMarcadorPreto from '../../img/bookmark_added.svg'
+import iconeCompartilhar from '../../img/share.svg'
+import { SecaoComentario } from '../SecaoComentario/SecaoComentario'
+
 
 class Post extends React.Component {
   state = {
@@ -13,6 +17,8 @@ class Post extends React.Component {
     numeroCurtidas: 0,
     comentando: false,
     numeroComentarios: 0,
+    salvarPost: false,
+    compartilharPost: false
   }
 
   onClickCurtida = () => {

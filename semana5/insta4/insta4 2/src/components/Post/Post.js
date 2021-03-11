@@ -2,7 +2,6 @@ import React from 'react'
 import './Post.css'
 
 import {IconeComContador} from '../IconeComContador/IconeComContador'
-
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
@@ -13,16 +12,17 @@ class Post extends React.Component {
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
-    numeroComentarios: 0
+    numeroComentarios: 0,
   }
 
   onClickCurtida = () => {
     let novoNumeroCurtidas //Criando uma váriável para a curtida = novas curtidas
     if (this.state.curtida) {
-      novoNumeroCurtidas = this.state.numeroCurtidas - 1
+      novoNumeroCurtidas = this.state.numeroCurtidas - 1;
     } else {
-      novoNumeroCurtidas = this.state.numeroCurtidas + 1
+      novoNumeroCurtidas = this.state.numeroCurtidas + 1;
     }
+
     this.setState({
       curtida: !this.state.curtida,
       numeroCurtidas: novoNumeroCurtidas
@@ -33,6 +33,7 @@ class Post extends React.Component {
   onClickComentario = () => {
     this.setState({
       comentando: !this.state.comentando
+    
     })
   }
 
@@ -46,7 +47,7 @@ class Post extends React.Component {
   render() {
     let iconeCurtida
 
-    if(this.state.curtido) {
+    if (this.state.curtida) {
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco

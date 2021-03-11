@@ -1,0 +1,175 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.tela-inteira {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color:orange;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 56px;
+    width: 100vw;
+    padding: 0px 4px 0px 80px;
+    z-index: 9;
+
+}
+
+.labtube-icon {
+    margin-top:12px ;
+    justify-content: center;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    background-size: 30px;
+  
+    
+  
+}
+#campoDeBusca{
+margin-left: 180px;
+height: 28px;
+width: 560px;
+}
+
+
+main {
+    margin-top: 60px;
+    margin-left: 0;
+    min-height: 80%;
+    display: flex;
+    position:relative;
+}
+
+.menu-vertical {
+    flex-basis: 300px;
+    position: fixed;
+    
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+    padding-inline-start: 1px;
+
+
+}
+.botoes-meunu-vertical {
+    list-style-type: none;
+    height:40px;
+    width: 160px;
+    vertical-align: middle;
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+.botoes-meunu-vertical:hover {
+  background-color: rgba(255, 166, 0, 0.486);
+}
+
+.propaganda{
+  position: absolute;
+  display:block;
+  margin-top:20px;
+  margin-left: 360px;
+  height:240px;
+  width: 400px;
+  flex-grow: 1;
+}
+
+.labtube-propaganda{
+  height: 100%;
+  width:200%;
+  image-resolution: max;
+}
+.painel-de-videos {
+    
+    margin-left: 200px;
+    padding-left: 40px;
+    padding-top: 300px;
+    width:800px;
+    flex-grow: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 22% 2%);
+    grid-template-rows: repeat(4, 160px 64px);
+}
+
+.media1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.media2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.media3 {
+    grid-column-start: 5;
+    grid-row-start: 1;
+}
+
+.media4 {
+    grid-column-start: 7;
+    grid-row-start: 1;
+}
+
+.media5 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.media6 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.media7 {
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.media8 {
+    grid-column-start: 7;
+    grid-row-start: 3;
+}
+
+
+.box-pagina-principal {
+    display: grid;
+    grid-template-rows: 88% 1fr;
+    grid-template-columns: 1fr;
+    border-style: solid;
+    border-width: thin; 
+    align-items: start;
+    justify-items: stretch;
+}
+
+
+footer {
+    height: 10%;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.box-pagina-principal > img {
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    margin-left: 20px;
+}

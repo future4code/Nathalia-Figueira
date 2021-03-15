@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Etapa1 from "./components/etapa1.js";
+import Etapa2 from "./components/etapa2.js";
+import Etapa3 from "./components/etapa3.js";
+import Etapa4 from "./components/final.js";
 
-function App() {
+
+render() {
   return (
-    
-  );
-}
-
-export default App;
+    Etapa1
+  )
+}export default app

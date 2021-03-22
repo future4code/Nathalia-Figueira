@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "1e95c375-2dad-443d-a894-2e2ff750fb80",
+		"name": "Exercicio_http e postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1_)creat a playlist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "nathalia-figueira-cruz",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "nathalia-figueira-cruz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rock\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists?",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

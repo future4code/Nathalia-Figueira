@@ -5,8 +5,8 @@ import labenuPropaganda from './assets/images/labenu-propaganda.png';
 
 function App() {
   const titulo = "Título do vídeo"
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido")
+  
+
   }
   return (
     <div >

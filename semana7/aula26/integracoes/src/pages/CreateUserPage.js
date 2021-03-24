@@ -3,8 +3,9 @@ import styled from "styled-components";
 import axios from "axios";
 import { baseUrl, axiosConfig } from "../Parameters";
 
-const Box = styled.div`
-    margin: 10% 40%;
+
+export const Box = styled.div`
+    margin: 4% 40%;
     display: flex;
     background-color: grey; 
     flex-direction: column;
@@ -15,18 +16,18 @@ const Box = styled.div`
     height: 300px;
     width: 20%;`
 
-    const Itens = styled.div`
+export const Itens = styled.div`
 margin: 10px;
 justify-content: space-around;
 `
-    const Item = styled.div`
+export const Item = styled.div`
 margin: 4px;`
 
 export default class CreateUserPage extends React.Component {
     
     state = {
-        name: '',
-        email: ''
+        name: "",
+        email: ""
     };
 
 
@@ -46,9 +47,12 @@ export default class CreateUserPage extends React.Component {
             .post(baseUrl, body, axiosConfig)
             .then((res) => {
                 console.log(res);
+                alert("Parabens!Cadastro realizado com Sucesso.")
                 this.setState({ name: "", email: "" });
+
             })
             .catch((err) => {
+                alert("Por favor verifique as informações.,</br>Nome ou Email Inválido.");
                 console.log(err);
             });
     };
@@ -62,9 +66,9 @@ export default class CreateUserPage extends React.Component {
                         <label >Nome:</label>
                     </Item>
                     <Item>
-                        <input value={this.state.inputName}
-                            onChange={this.handleOnChangeName}
-                            placeholder={"Nome do Usuario"}>
+                        <input value={this.state.name}
+                            onChange={this.handleName}
+                            placeholder="Nome do Usuario">
                         </input>
                     </Item>
                 </Itens>
@@ -74,14 +78,14 @@ export default class CreateUserPage extends React.Component {
                     </Item>
                     <Item>
                         <input
-                            value={this.state.inputEmail}
-                            onChange={this.handleOnChangeEmail}
-                            placeholder={"Email"}>
+                            value={this.state.email}
+                            onChange={this.handleEmail}
+                            placeholder="Email">
                         </input>
                     </Item>
                 </Itens>
-                <button >Enviar</button>
-            </Box>
+                <button onClick={this.creatUser}>Enviar</button>
+                </Box>
             
         )
     }

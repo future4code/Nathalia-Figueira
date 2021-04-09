@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {baseUrl} from './Parameters.js'
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import AppContainerDiv from './modules/AppContainer';
 
-function App() {
+export default function App() {
 
+
+return(
+   <AppContainerDiv/>
+    
+)
 }
-return
-export default App;
+

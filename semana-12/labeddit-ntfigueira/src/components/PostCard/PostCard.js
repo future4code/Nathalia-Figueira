@@ -1,31 +1,33 @@
 import React from 'react'
-import CardActionArea from '@material-ui/core/CardActionArea'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
-import { PostsCardContainer, 
+import { PostsCardContainer,
+        PostCardActionArea, 
         PostCardContent, 
         PostTitle, 
         PostIcons
  } from './Styled'
 
 
-const PostCard = (props) => {
+const PostagemCard = (postagem) => {
 
   return (
-    <PostsCardContainer onClick={props.onClick}>
-      <CardActionArea>
-      <PostTitle align={'center'}>
-            <b>{props.title.toUpperCase()}</b>
+    <PostsCardContainer>
+      <PostCardActionArea>
+      <PostTitle 
+      align={'center'}
+      color= {'primary'}>
+            <b>{postagem.title.toUpperCase()}</b>
           </PostTitle>
         <PostCardContent>
           <PostIcons>
-              <FavoriteIcon style={{ color: 'white' }}/>
-              <ShareIcon style={{ color: 'white' }}/>
+              <FavoriteIcon color="secondary"/>
+              <ShareIcon color="secondary"/>
           </PostIcons>
         </PostCardContent>
-      </CardActionArea>
+      </PostCardActionArea>
     </PostsCardContainer>
   )
 }
 
-export default PostCard
+export default PostagemCard

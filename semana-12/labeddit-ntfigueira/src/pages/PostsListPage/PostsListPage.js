@@ -1,27 +1,36 @@
 import React from "react"
-import PostCard from "../../components/PostCard/PostCard"
+import PostagemCard  from "../../components/PostCard/PostCard"
 import useProtectedPage from '../../hooks/useProtectedPage'
 import useRequestData from '../../hooks/useRequestData'
 import { BASE_URL } from '../../constants/urls'
+import { PostsCardContainer } from "../../components/PostCard/Styled"
 
 
 
-const PostsListPage = () => {
+const PostsListPage = (postagem) => {
   useProtectedPage()
  
   const posts = useRequestData([],`${BASE_URL}posts`)
   console.log(posts.posts)
   
 
-  const postCards = posts.posts && posts.posts.map ((post)=>{
-    return <p>{post.title}</p>
-    console.log(post)
+  const postCards = posts.posts && posts.posts.map ((postagem)=>{
+    return(
+    <PostagemCard
+    key ={postagem.id}
+    title={postagem.title}
+    />
+    )
   })
 
   return (
-      <div>
+    <PostsCardContainer>
       {postCards}
-      </div>
+    </PostsCardContainer>
+          
+
+
+   
     )
 }
 

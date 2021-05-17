@@ -1,0 +1,29 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "aprendendo a usar o node",
+  "main": "index.js",
+  "scripts": {
+    "searchCountryByName": "clear && node index.js"
+  },
+  "keywords": [
+    "node",
+    "package"
+  ],
+  "author": "labenu",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  },
+  "dependencies": {
+    "knex": "^0.95.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/Nathalia-Figueira.git"
+  },
+  "bugs": {
+    "url": "https://github.com/future4code/Nathalia-Figueira/issues"
+  },
+  "homepage": "https://github.com/future4code/Nathalia-Figueira#readme"
+}

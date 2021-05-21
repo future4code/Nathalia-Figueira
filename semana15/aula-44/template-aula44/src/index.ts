@@ -59,6 +59,41 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+
+
+
+app.get ("users/all", (req: Request, res: Response) => { 
+  const allUsers = req.query.users
+
+  res
+  .status(200)
+  .send(allUsers)
+})
+
+
+
+app.get("/users", (req: Request, res: Response) => {
+  try{
+   const id = Number(req.query.id)
+   const result = users.filter((user) => user.id=== id)
+    res
+      .status(200)
+      .send(result)
+
+  } catch (err) {
+      res
+        .status(400)
+        .send({
+          message: err.message
+        })
+  }
+
+})
+
+
+
+
+
 // Para testar se o servidor está tratando os endpoints corretamente
 app.get("/ping", (req: Request, res: Response) => {
   res.status(200).send("pong!")

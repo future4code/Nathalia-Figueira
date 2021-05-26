@@ -1,0 +1,134 @@
+# Atividade da tarde - Aula 46
+## Aprofundamento MySQL
+####  Exercicio 1 -  Leia os comandos abaixo e indique o que eles fazem. Explique o que elas fariam **se fossem** rodadas. 
+##### A)
+```sql
+ALTER TABLE Actor DROP COLUMN salary;
+```  
+`Resposta:`  *Altera a tabela apagando a coluna salary*
+##### B) 
+```sql 
+ALTER TABLE Actor CHANGE gender sex VARCHAR(6)
+```
+`Resposta:` *Altera a tabela Actor mudando o A coluna "gender" para "sex* 
+
+##### C) 
+```sql 
+ALTER TABLE Actor CHANGE gender gender VARCHAR(255)
+```
+ `Resposta:` *Não Altera o nome da coluna pois, muda de "gender", para "gender", mas altera o comprimento de dados dos campos da coluna "gender" que passam a poder reecber e armazenar 255 caracteres, o que equivale a 1bite.*
+##### D)  Agora,  altere a coluna gender da tabela ACTOR para que ele aceite strings com até 100 caracteres
+`Resposta :` 
+```sql
+ALTER TABLE Aactor CHANGE gender gender VARCHAR(100);
+```
+
+#### Exercício 2 -Faça o que for pedido abaixo:
+
+##### A) Escreva uma query que atualize o nome e a data de nascimento do ator com o id *003*
+`Resposta:`
+```sql
+UPDATE Actor
+SET name = "Selton Mello",
+birth_date = "1972-12-30" 
+WHERE id = "003";
+```
+##### B) Escreva uma query que atualize o nome da atriz *Juliana Paes* para *JULIANA PAES*. Então, escreva outra query para voltar ao nome anterior.
+`Resposta:`
+```sql 
+SELECT UPPER(Juliana Paes)
+from Actor;
+```
+```sql 
+SELECT LOWER(JULIANA PAES)
+from Actor;
+```
+
+##### C) Escreva uma query que atualize todas as informações do ator com o id *005*
+`Resposta:`
+```sql
+UPDATE Actor
+SET name = "Matheus Nachtergaele",
+salary = "50000",
+birth_date = "1968-01-03", 
+gender = "male"
+WHERE id = "008";
+```
+
+##### D) Escreva uma query em que você tente atualizar um dado da tabela que não existe (com um id inválido, por exemplo). Teste, anote e explique o resultado.*
+`Resposta:`
+O Meu MySQL me retorna no cmapode erro "Actor 8" depois me retornou "Actor 15" ao tentar fazer novamente, eu não sei bem o que isso significa.
+
+#### Exercício 3 -Faça o que for pedido abaixo:
+##### A) Escreva uma query que apague a atriz com o nome *Fernanda Montenegro*
+`Resposta:`
+```sql
+DELETE FROM Actor WHERE name = "Fernanda Montenegro";
+```
+##### B) Escreva uma query que apague todos os atores (do gênero *male*) com o salário maior do que R$1.000.000,00*
+`Resposta:`
+```sql
+DELETE FROM Actor WHERE gender = "male" AND
+salary > 1000000;
+```
+#### Exercício 4 -Faça o que for pedido abaixo:
+##### A) Escreva uma query que pegue o maior salário de todos os atores e atrizes
+`Resposta:`
+```sql
+SELECT MAX(salary) FROM Actor
+```
+
+##### B) Escreva uma query que pegue o menor salário das atrizes
+`Resposta:`
+```sql
+SELECT MIN(salary) FROM Actor WHERE gender = "female"
+```
+
+##### C) Escreva uma query que pegue a quantidade de atrizes
+`Resposta:`
+```sql
+SELECT COUNT(*) FROM Actor WHERE gender = "female"
+```
+
+##### D) Escreva uma query que pegue a soma de todos os salários
+`Resposta:`
+```sql
+SELECT SUM(salary) FROM Actor
+```
+
+#### Exercício 5 -Faça o que for pedido abaixo:
+
+##### A) Releia a última query. Teste-a. Explique o resultado com as suas palavras
+`Resposta:` *Ao testar a query ela me retornou uma tabela, dividida em "#" referindo-se a ID, "COUNT( * )" referindo-se a quantidade e "gender" referindo-se ao genero.Ou seja me retornou a quantidade de atores por gender. Ficando assim:*
+ _#_ | COUNT(*)  | gender
+ --- | --------- | -----
+ 1   | 2         |male
+ 2   | 3         |female
+
+##### B) Faça uma query que retorne somente o id e o nome dos atores em ordem decrescente alfabética
+`Resposta:`
+```sql
+SELECT id, name FROM Actor
+ORDER BY name DESC;
+```
+##### C) Faça uma query que retorne todos os atores ordenados pelo salário*
+`Resposta:`
+```sql
+SELECT * FROM Actor
+ORDER BY salary;
+```
+##### D) Faça uma query que retorne os atores com os três maiores salarios
+`Resposta:`
+```sql
+SELECT * FROM Actor
+ORDER BY salary DESC
+LIMIT 3;
+```
+##### E) Faça uma query que retorne a média de salário por gênero
+`Resposta:`
+```sql
+SELECT AVG(salary), gender FROM Actor
+GROUP BY gender;
+```
+
+

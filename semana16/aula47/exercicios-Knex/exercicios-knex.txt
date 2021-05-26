@@ -1,0 +1,10 @@
+# Atividade da tarde - Aula 47
+## KNEX.js
+### Aluna: Nathália Figueira da Silva
+
+#####  1 _ a) Explique como é a resposta que temos quando usamos o `raw`.* 
+`Resposta :` O método *raw* nos permite utilizar diretamente a linguagem SQL para enviarmos uma query para o banco de dados
+#####  1 _ b)Faça uma função que busque um ator pelo nome;
+`Resposta :` 
+#####  1 _ c) Faça uma função que receba um `gender` retorne a quantidade de itens na tabela Actor com esse `gender`. Para atrizes, `female` e para atores `male`.
+`Resposta :` 

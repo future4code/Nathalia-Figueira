@@ -19,3 +19,10 @@ export enum userRole {
 }
 
 export type user = {id: string, email: string, name: string, nickname: string, password: string, role: userRole}
+
+export type userAddress = {
+   street: string
+   neighborhood: string
+   city: string
+   state: string
+}

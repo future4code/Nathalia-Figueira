@@ -7,9 +7,7 @@ test("Teste saldo maior que o valor", () => {
 		name: "Ana",
 		balance: 300
 	}
-
 	const result = performPurchase(user, 100)
-	
 	expect(result).toEqual({
 		name: "Ana",
 		balance: 200
